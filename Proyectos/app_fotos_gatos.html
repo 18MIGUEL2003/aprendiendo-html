@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!--Define que es un documento HTML-->
+<html lang="en"> <!--Define el idioma de nuestro documento-->
+  <head> <!--Encabezado de nuestra pagina, lo que escribimos aqui no se ve reflejado en la pagina-->
+<meta charset="utf-8"> <!--Formato de nuestro documento-->
+    <title>CatPhotoApp</title> <!--El titulo de nuestra pagina web, el que aparece al lado del favicon-->
+  </head>
+  <body> <!--Todo el cuerpo de nuestra pagina web-->
+    <main> <!--Esta etiqueta nos encierra el contenido principal de nuestro body-->
+      <h1>CatPhotoApp</h1> <!--Titulo de mayor importancia o Jerarquia-->
+      <section> <!--representa una sección genérica independiente de un documento, que no tiene un elemento semántico más específico para representarla.-->
+        <h2>Cat Photos</h2> <!--Titulo siguiente al de mayor importancia-->
+        <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a> online!</p>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section> <!--Dentro de este section encontramos la etiqueta de parrafos (P) y la (<a>) para hipervinculos-->
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3> <!--Otra de las etiquetas de titulos-->
+        <ul> <!--Etiqueta para crear listas desordenadas-->
+          <li>cat nip</li>
+          <li>laser pointers</li> <!--Etiqueta para crear los items de las listas ya sea ordenada o desordenada-->
+          <li>lasagna</li>
+        </ul>
+        <figure> <!--Etiqueta <img> para insertar imagenes y la alt nos sirve para describirlas, ayudar un poco a el navegador o sino carga la imagen-->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption> <!--Etiqueta (em) para dejar un renglon-->
+        </figure>
+<!--Etiqueta <figure> representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal,
+ su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama,
+ un fragmento de código, o un esquema al que se hace referencia en el texto principal,
+ pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal.-->
+        <h3>Top 3 things cats hate:</h3>
+        <ol> <!--Etiqueta para crear listas ordenadas-->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption> <!--Etiqueta strong para remarcar un palabra o texto +importante-->
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!--Etiqueta para encerrar un formulario-->
+          <fieldset> <!--Con fieldset agrupamos todo el form en una caja y el legend para agrupar los campos del form-->
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset> <!--input es para recibir datos del usuario, en el tipo le damos que tipo de entrada queremos
+          que sea, el id para darle un identificador unico y el ckecked para que siempre este marcado-->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button> <!--Boton de enviar-->
+        </form>
+      </section>
+    </main>
+    <footer> <!--Etiqueta para encerrar todo el contenido del pie de pagina-->
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
